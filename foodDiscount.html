@@ -5,22 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="dist/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-    <style></style>
   </head>
-
   <body>
     <div class="top-0 bg-orange w-full h-10 font-semibold text-sm shadow-lg z-20 relative">
       <div class="flex items-center float-right gap-3">
-        <img src="dist/img/indonesia.png" class="w-10" />
+        <img src="src/logo bendera idn.svg" class="w-10" />
         <form action=""><button type="Submit" class="bg-white w-20 h-7 mr-2 rounded-2xl hover:bg-hover">Masuk</button> <button class="bg-white w-20 h-7 mr-3 rounded-2xl hover:bg-hover">Daftar</button></form>
       </div>
     </div>
-    <header class="fixed w-full h-16 shadow-lg">
-      <img src="dist/img/food.jpg" class="w-auto h-full ml-5 absolute" />
+    <div class="bg-white w-full h-12 shadow-lg">
+      <a href="index.html">
+        <img src="logo FoodUnity" class="w-auto h-full ml-5 absolute" />
+      </a>
       <div class="float-right mt-5 mr-12">
-        <ul class="ul flex gap-8">
-          <li><a href="foodDiscount.html" class="hover:text-blue-400">Beranda</a></li>
+        <ul class="flex gap-8">
+          <li><a href="index.html" class="hover:text-blue-400">Beranda</a></li>
           <li><a href="#" class="hover:text-blue-400">Tentang Kami</a></li>
           <li>
             <select id="programDropdown">
@@ -32,14 +31,15 @@
           </li>
           <li><a href="#" class="hover:text-blue-400">Berita</a></li>
           <li><a href="#" class="hover:text-blue-400">Hubungi Kami</a></li>
-          <img src="dist/img/lonceng.jpg" class="w-8" />
-          <img src="dist/img/account.jpg" class="w-8" />
+          <img src="src/logo lonceng.png" class="w-8 mt-1" />
+          <img src="src/logo orang.png" class="w-8" />
         </ul>
       </div>
-    </header>
-    <!--BATASAN AWAL yusuf-->
-    <div class=""></div>
-    <!--BATASAN AKHIR yusuf-->
+    </div>
+
+    <div class="mt-8">
+      <img src="src/krisis pangan.jpg" class="w-full" alt="" />
+    </div>
     <script>
       document.getElementById("programDropdown").addEventListener("change", function () {
         var selectedOption = this.options[this.selectedIndex].value;
