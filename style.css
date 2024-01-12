@@ -1,0 +1,558 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.images {
+  display: flex;
+  margin-top: 70px;
+  margin-top: calc(70px + 10px);
+  transition: 2s;
+  position: relative;
+}
+.images img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  background-color: rgba(255, 165, 0, 0.6);
+}
+
+.wrapper {
+  width: 100%;
+  margin: auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+/*backdrop*/
+
+/*backdrop*/
+/* Style untuk backdrop */
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Pastikan elemen ini berada di atas gambar */
+  opacity: 0.5; /* Tambahkan tingkat kejelasan di sini */
+}
+
+/* Style untuk backdrop-slide-1 */
+.backdrop-slide-1 {
+  background: rgba(255, 165, 0, 0.5); /* Warna orange pudar dengan 50% kejelasan */
+}
+
+/* Style untuk backdrop-slide-2 */
+.backdrop-slide-2 {
+  background: rgba(255, 165, 0, 0.5); /* Warna orange pudar dengan 50% kejelasan */
+}
+
+/* Style untuk backdrop-slide-3 */
+.backdrop-slide-3 {
+  background: rgba(255, 165, 0, 0.5); /* Warna orange pudar dengan 50% kejelasan */
+}
+
+/* Style untuk backdrop-slide-4 */
+.backdrop-slide-4 {
+  background: rgba(255, 165, 0, 0.5); /* Warna orange pudar dengan 50% kejelasan */
+}
+
+/* Style untuk gambar (image) */
+.images img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+/*backdrop*/
+
+/*backdrop*/
+
+#slide-1:target ~ .images {
+  transform: translateX(0%);
+}
+
+#slide-2:target ~ .images {
+  transform: translateX(-100%);
+}
+
+#slide-3:target ~ .images {
+  transform: translateX(-200%);
+}
+
+#slide-4:target ~ .images {
+  transform: translateX(-300%);
+}
+
+.navigation a {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-color: #dedede;
+  font-size: 0px;
+  border-radius: 50%;
+  margin: 3px;
+}
+
+.navigation a:hover {
+  background-color: #666;
+  transition: 0.5s;
+}
+
+.navigation {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: -50px;
+}
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+/* AWAL TENTANG KAMI*/
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 450px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.content {
+  flex: 1;
+  padding: 30px;
+  background-color: #ffffff;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin: center;
+  margin-left: 85px;
+  font-family: open sans;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+  margin-top: 50px;
+  font-family: open sans;
+}
+
+.image {
+  width: 40%;
+  max-height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 100px;
+  margin-left: 90px;
+}
+/*Program Kami awal*/
+.teks h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  font-family: ubuntu;
+  background-color: #fff;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.element {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  color: #fff;
+  overflow: hidden;
+}
+
+.element img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.element:nth-child(1) {
+  background: url("dist/img/Food1.jpg") center/cover;
+  background-color: rgba(255, 255, 102, 0.8);
+}
+
+.element:nth-child(2) {
+  background: url("dist/img/food2.jpg") center/cover;
+  background-color: rgba(255, 165, 0, 0.8);
+}
+
+.element:nth-child(3) {
+  background: url("dist/img/food3.jpg") center/cover;
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.backdrop:nth-child(1) {
+  background-color: rgba(255, 255, 102, 0.8);
+}
+
+.backdrop:nth-child(2) {
+  background-color: rgba(255, 165, 0, 0.8);
+}
+
+.backdrop:nth-child(3) {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+.description {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.read-more {
+  background-color: #ffcc00;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .element {
+    padding: 10px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+}
+/*Program Kami awal*/
+
+/*blog 1*/
+.blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.blog-post {
+  width: 30%;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 1rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 0.875rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #1a237e;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #0d47a1;
+}
+
+.date {
+  font-size: 0.75rem;
+  color: #777;
+  margin-top: 0.5rem;
+}
+/*blog 1*/
+
+/*hubungi kami awal*/
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.teks2 h1 {
+  background-color: #fff;
+  color: black;
+  display: center;
+  text-align: center;
+  justify-contact: center;
+  font-size: 2rem;
+  font-family: open sans;
+}
+
+.address-section,
+.message-section {
+  width: 49%;
+}
+
+.address-section {
+  background-color: #d3d3d3;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.address-section svg {
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.social-links svg {
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+}
+
+.message-section {
+  background-color: #d3d3d3;
+  padding: 1rem;
+  border-radius: 5px;
+  animation: fadeIn 1s ease;
+}
+
+.message-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-section label {
+  margin-bottom: 6px;
+}
+
+.message-section input,
+.message-section textarea,
+.message-section button {
+  margin-bottom: 12px;
+}
+
+.message-section button {
+  background-color: orange;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.message-section button:hover {
+  background-color: darkorange;
+}
+
+.footer {
+  text-align: center;
+  margin: 2rem 0;
+  height: 30px;
+  color: #fff;
+  background-color: #0d47a1;
+}
+
+.footer p {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer p:hover {
+  color: #333;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*hubungi kami akhir*/
+/* daftar*/
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Custom styles */
+  .bg-gray-100 {
+    background-color: #f0f0f0;
+  }
+  
+  .text-orange-600 {
+    color: #ff8c00;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .mb-10 {
+    margin-bottom: 2.5rem;
+  }
+  
+  .mt-20 {
+    margin-top: 5rem;
+  }
+  
+  .bg-white {
+    background-color: #fff;
+  }
+  
+  .p-8 {
+    padding: 2rem;
+  }
+  
+  .rounded-xl {
+    border-radius: 0.75rem;
+  }
+  
+  .shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .w-96 {
+    width: 24rem;
+  }
+  
+  .mb-3 {
+    margin-bottom: 0.75rem;
+  }
+  
+  .inline-block {
+    display: inline-block;
+  }
+  
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+  
+  .font-semibold {
+    font-weight: 600;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .text-sm {
+    font-size: 0.875rem;
+  }
+  
+  .mt-1 {
+    margin-top: 0.25rem;
+  }
+  
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .border {
+    border: 1px solid #e5e7eb;
+  }
+  
+  .my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .max-w-7 {
+    max-width: 1.75rem;
+  }
+  
+  .text-gray-950 {
+    color: #4a5568;
+  }
+  
+  .ml-5 {
+    margin-left: 1.25rem;
+  }
+  
+  .my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .text-gray-500 {
+   
+  
+/* daftar*/

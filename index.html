@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="dist/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <style></style>
   </head>
 
   <body>
-    <div class="top-0 bg-orange w-full h-10 font-semibold text-sm shadow-lg z-20 relative">
+    <div class="top-0 bg-orange w-full h-10 font-semibold text-sm shadow-lg z-20 relative" style="height: 50px">
       <div class="flex items-center float-right gap-3">
-        <img src="dist/img/indonesia.png" class="w-10" />
-        <form action=""><button type="Submit" class="bg-white w-20 h-7 mr-2 rounded-2xl hover:bg-hover">Masuk</button> <button class="bg-white w-20 h-7 mr-3 rounded-2xl hover:bg-hover">Daftar</button></form>
+        <img src="dist/img/indonesia.png" class="w-10" style="margin-top: 10px" />
+        <form href="" action=""><button type="Submit" style="margin-top: 10px" class="bg-white w-20 h-7 mr-2 rounded-2xl hover:bg-hover">Masuk</button> <button class="bg-white w-20 h-7 mr-3 rounded-2xl hover:bg-hover">Daftar</button></form>
       </div>
     </div>
     <header class="fixed w-full h-16 shadow-lg">
       <img src="dist/img/food.jpg" class="w-auto h-full ml-5 absolute" />
       <div class="float-right mt-5 mr-12">
         <ul class="ul flex gap-8">
-          <li><a href="foodDiscount.html" class="hover:text-blue-400">Beranda</a></li>
+          <li><a href="#" class="hover:text-blue-400">Beranda</a></li>
           <li><a href="#" class="hover:text-blue-400">Tentang Kami</a></li>
           <li>
             <select id="programDropdown">
@@ -37,8 +37,191 @@
         </ul>
       </div>
     </header>
+
     <!--BATASAN AWAL yusuf-->
-    <div class=""></div>
+
+    <div class="wrapper">
+      <div class="slides">
+        <span id="slide-1"></span>
+        <span id="slide-2"></span>
+        <span id="slide-3"></span>
+        <span id="slide-4"></span>
+        <div class="images">
+          <div class="backdrop backdrop-slide-1"></div>
+          <img src="dist/img/makan_ojol1.jpg" class="w-full" alt="" />
+          <div class="backdrop backdrop-slide-2"></div>
+          <img src="dist/img/wakwaw.jpg" class="w-full" alt="" />
+          <div class="backdrop backdrop-slide-3"></div>
+          <img src="dist/img/makan_ojol1.jpg" class="w-full" alt="" />
+          <div class="backdrop backdrop-slide-4"></div>
+          <img src="dist/img/lonceng.jpg" class="w-full" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!--navigasi -->
+    <div class="navigation">
+      <a href="#slide-1">1</a>
+      <a href="#slide-2">2</a>
+      <a href="#slide-3">3</a>
+      <a href="#slide-4">4</a>
+    </div>
+    <!--navigasi akhir -->
+
+    <!--Contant awal 1-->
+    <div class="container">
+      <div class="content">
+        <img class="image" src="dist/img/Tentang kami.png" alt="Tentang Kami" />
+        <div class="title">Tentang Kami</div>
+        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+      </div>
+
+      <div class="content">
+        <img class="image" src="dist/img/misi kami.png" alt="Misi Kami" />
+        <div class="title">Misi Kami</div>
+        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+      </div>
+
+      <div class="content">
+        <img class="image" src="dist/img/tujuan kami.png" alt="Tujuan Kami" />
+        <div class="title">Tujuan Kami</div>
+        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+      </div>
+    </div>
+    <!--Contant akhir 1-->
+
+    <!-- Program Kami awal -->
+    <div class="teks">
+      <h1>Program Kami</h1>
+    </div>
+    <div class="section">
+      <div class="element">
+        <div class="backdrop"></div>
+        <div class="text">
+          <h2>Food Discount%</h2>
+          <img src="dist/img/images-removebg-preview.png" alt="Food Discount Icon" />
+          <p class="description">Deskripsi Food Discount% lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+          <a href="#" class="read-more">Selengkapnya</a>
+        </div>
+      </div>
+
+      <div class="element">
+        <div class="backdrop"></div>
+        <div class="text">
+          <h2>Food Waste</h2>
+          <img src="dist/img/f-removebg-preview.png" alt="Food Waste Icon" />
+          <p class="description">Deskripsi tentang masalah food waste lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+          <a href="#" class="read-more">Selengkapnya</a>
+        </div>
+      </div>
+
+      <div class="element">
+        <div class="backdrop"></div>
+        <div class="text">
+          <h2>Tujuan Kami</h2>
+          <img src="dist/img/f2-removebg-preview.png" alt="Red Icon" />
+          <p class="description">Deskripsi tujuan kami lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+          <a href="#" class="read-more">Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+    <!-- Program Kami akhir -->
+
+    <!--Blog awal 1-->
+    <div class="blog">
+      <div class="blog-post">
+        <img src="https://source.unsplash.com/360x200?food-discount" alt="food-waste" />
+        <div class="blog-content">
+          <h3>Berita Food Waste</h3>
+          <p>Deskripsi berita tentang food waste Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="read-more">Selengkapnya</a>
+          <p class="date">10 Januari 2024</p>
+        </div>
+      </div>
+
+      <div class="blog-post">
+        <img src="https://source.unsplash.com/360x200?food-charity" alt="food-waste" />
+        <div class="blog-content">
+          <h3>Berita Food Waste</h3>
+          <p>Deskripsi berita tentang food waste Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="read-more">Selengkapnya</a>
+          <p class="date">10 Januari 2024</p>
+        </div>
+      </div>
+
+      <div class="blog-post">
+        <img src="https://source.unsplash.com/360x200?food-share" alt="food-waste" />
+        <div class="blog-content">
+          <h3>Berita Food Waste</h3>
+          <p>Deskripsi berita tentang food waste Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="read-more">Selengkapnya</a>
+          <p class="date">10 Januari 2024</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Blog awal 1-->
+
+    <!--Hubungi Kami awal-->
+    <div class="teks2">
+      <h1>Hubungi Kami</h1>
+    </div>
+    <div class="contact">
+      <div class="address-section">
+        <h2>Alamat</h2>
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>Karawang, Jawa Barat,
+          Indonesia
+        </p>
+        <div class="social-links">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 0C2.239 0 0 2.239 0 5s2.239 5 5 5c1.228 0 2.362-.429 3.238-1.144.286-.251.542-.543.756-.867l4.52-8.224A2.5 2.5 0 0 0 13.696.115l.096.075 4.52 8.224c.213.324.47.616.756.867.876.716 2.01 1.144 3.238 1.144 2.761 0 5-2.239 5-5s-2.239-5-5-5h-3V2h-2v2H9V2H7v2H2V5c0-2.761 2.239-5 5-5z"
+            ></path>
+          </svg>
+          <p>@foodunity</p>
+        </div>
+        <div class="social-links">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.39 16.36c-3.39.18-4.82-2.45-5.11-4.16a6.57 6.57 0 0 1 .92-5.12c-.88-1.39-3.24-5.34-3.36-5.58a.48.48 0 0 1 .14-.52c.13-.12.35-.12.49-.05a9.09 9.09 0 0 1 1.79 1.51c.09.1.22.15.35.12.19 0 .37-.1.47-.27.21-.38 1.21-2.15 2.9-2.2 1.2-.04 2.43.49 3.49 1.4.25.21.64.24.9.05.26-.18.32-.52.14-.79-.18-.26-.53-.32-.79-.14a7.59 7.59 0 0 0-2.03-.8c-2.19-.27-4.57.71-6.21 2.36a9.03 9.03 0 0 0-2.36 6.22c0 5.04 4.09 9.13 9.13 9.13s9.13-4.09 9.13-9.13c0-2.72-1.17-5.36-3.23-7.18-.4-.42-1.04-.44-1.49-.04a.995.995 0 0 0-.08 1.41c1.65 1.97 2.8 4.34 3.18 6.8.1.8.73 1.42 1.54 1.48.85.07 1.6-.5 1.8-1.2.12-.62-.22-1.26-.83-1.4z"
+            ></path>
+          </svg>
+          <p>085694743168</p>
+        </div>
+      </div>
+
+      <div class="message-section">
+        <h2>Pesan</h2>
+        <form>
+          <div>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="subject">Subjek:</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div>
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit">Kirim</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; FoodUnity 2024 by Arthemis Team</p>
+    </div>
+    <!--Hubungi Kami akhir-->
+
     <!--BATASAN AKHIR yusuf-->
     <script>
       document.getElementById("programDropdown").addEventListener("change", function () {
@@ -48,5 +231,6 @@
         }
       });
     </script>
+    <script src="food.js"></script>
   </body>
 </html>

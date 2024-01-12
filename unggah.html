@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unggah - FoodDiscount</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f57e2e;
+      }
+
+      .drop-container {
+        border: 2px dashed #fff;
+        height: 500px;
+        width: 1100px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .drop-container.active {
+        border: 2px solid #fff;
+      }
+
+      .bungkus {
+        display: flex;
+        height: 400px;
+        width: 900px;
+      }
+
+      .unggah {
+        text-align: center;
+        display: block;
+        margin: 5rem 3rem 0 3rem;
+      }
+
+      .icon {
+        margin-top: -2rem;
+      }
+
+      h1 {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 600;
+        margin-top: 1rem;
+      }
+
+      #fileInput {
+        color: #fff;
+      }
+
+      .uploaded-files {
+        flex-grow: 1;
+        background-color: #fff;
+        border-radius: 3%;
+        text-align: center;
+        overflow: auto;
+      }
+
+      .uploaded-files h2 {
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      #fileList {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+
+      #fileList li {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background-color: #ffffff;
+        padding: 8px;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      #fileList img {
+        max-width: 100%;
+        max-height: 100px;
+        margin-top: 8px;
+        border-radius: 4px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-label1 {
+        margin-right: 10rem;
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 8px;
+        color: #333;
+      }
+
+      .form-label2 {
+        margin-right: 14rem;
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 8px;
+        color: #333;
+      }
+
+      .form-input {
+        width: 250px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="drop-container" id="dropContainer">
+      <div class="bungkus">
+        <div class="unggah">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" height="180" width="180" viewBox="0 0 448 512">
+              <path
+                d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3V320c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 53 43 96 96 96H352c53 0 96-43 96-96V352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V352z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <h1>Seret & lepas file di sini atau klik dibawah ini</h1>
+          <input type="file" id="fileInput" multiple />
+        </div>
+        <div class="uploaded-files">
+          <h2>Berikan Keterangan</h2>
+          <form id="uploadForm">
+            <ul id="fileList"></ul>
+            <div class="form-group">
+              <label for="name" class="form-label1">Nama Makanan</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Masukkan Nama Makanan" />
+            </div>
+            <div class="form-group">
+              <label for="address" class="form-label2">Alamat</label>
+              <input type="text" id="address" name="address" class="form-input" placeholder="Masukkan Alamat" />
+            </div>
+            <button type="submit">Unggah</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let dropArea = document.querySelector(".drop-container");
+
+      dropArea.addEventListener("dragover", (e) => {
+        e.preventDefault(); // Prevent default to allow drop
+        console.log("File is over DragArea");
+        dropArea.classList.add("active");
+      });
+
+      dropArea.addEventListener("dragleave", () => {
+        console.log("File is outside from DragArea");
+        dropArea.classList.remove("active");
+      });
+
+      dropArea.addEventListener("drop", (e) => {
+        e.preventDefault(); // Prevent default to allow drop
+        dropArea.classList.remove("active");
+
+        // Handle dropped files here if needed
+        const files = e.dataTransfer.files;
+        if (files.length > 0) {
+          console.log("Files dropped:", files);
+          // Add your file handling logic here
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const dropContainer = document.getElementById("dropContainer");
+        const fileInput = document.getElementById("fileInput");
+        const fileList = document.getElementById("fileList");
+        const uploadForm = document.getElementById("uploadForm");
+
+        dropContainer.addEventListener("dragover", function (e) {
+          e.preventDefault();
+          dropContainer.classList.add("drag-over");
+        });
+
+        dropContainer.addEventListener("dragleave", function () {
+          dropContainer.classList.remove("drag-over");
+        });
+
+        dropContainer.addEventListener("drop", function (e) {
+          e.preventDefault();
+          dropContainer.classList.remove("drag-over");
+
+          const files = e.dataTransfer.files;
+          handleFiles(files);
+        });
+
+        // Ganti event listener pada fileInput dengan input change
+        fileInput.addEventListener("input", function () {
+          const files = fileInput.files;
+          handleFiles(files);
+        });
+
+        // Tambahkan event listener untuk menangani pengiriman formulir
+        uploadForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const nameMakananInput = document.getElementById("name");
+          const nameMakanan = nameMakananInput.value;
+          const keteranganInput = document.getElementById("address");
+          const keterangan = keteranganInput.value;
+
+          const files = fileInput.files;
+          handleFiles(files, nameMakanan, keterangan);
+
+          uploadForm.reset();
+        });
+
+        function handleFiles(files, nameMakanan, keterangan) {
+          fileList.innerHTML = ""; // Bersihkan file sebelum menambahkan yang baru
+
+          for (const file of files) {
+            const listItem = document.createElement("li");
+            const img = document.createElement("img");
+            img.classList.add("thumbnail");
+
+            if (file.type.startsWith("image/")) {
+              const reader = new FileReader();
+
+              reader.onload = function (e) {
+                img.src = e.target.result;
+              };
+
+              reader.readAsDataURL(file);
+            } else {
+              img.src = "file-icon.png";
+            }
+
+            listItem.textContent = file.name;
+            listItem.appendChild(img);
+            fileList.appendChild(listItem);
+          }
+
+          const keteranganItem = document.createElement("li");
+          keteranganItem.textContent = `Nama Makanan: ${nameMakanan}, Alamat: ${keterangan}`;
+          fileList.appendChild(keteranganItem);
+        }
+      });
+    </script>
+  </body>
+</html>

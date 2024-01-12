@@ -1,13 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["login.html"],
-
+  content: ["index.html", "login.html"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
-        orange: "#F57E2E",
-        hover: "#f1f5f9",
-        background: "#D3D3D3",
+        primary: "#10b981",
+        secondary: "#64748b",
+        dark: "#020617",
+        orange: "#ea580c",
       },
     },
   },
