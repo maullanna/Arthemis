@@ -1,191 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daftar-FoodUnity</title>
-    <style>
-      body {
-        background-color: #f4f4f4;
-        scroll-behavior: smooth;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: Arial, Helvetica, sans-serif;
-      }
 
-      .title {
-        text-align: center;
-        font-size: 3rem;
-        font-weight: 700;
-        margin-bottom: 2rem;
-        margin-top: -10rem;
-        color: rgb(234 88 12);
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daftar-FoodUnity</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      scroll-behavior: smooth;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-      .container {
-        background-color: #fff;
-        padding: 2rem;
-        border-radius: 0.75rem;
-        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-        width: 24rem;
-        height: 25rem;
-        margin-bottom: -8rem;
-      }
+    .title {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      margin-top: -10rem;
+      color: rgb(234 88 12);
+    }
 
-      .container .content1 {
-        margin-bottom: 0.75rem;
-        margin-top: 10px;
-        display: inline-block;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-      }
+    .container {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      width: 24rem;
+      height: 25rem;
+      margin-bottom: -8rem;
+    }
 
-      .titleContent1 {
-        font-size: 24px;
-        font-weight: 550;
-        margin-top: -1rem;
-      }
+    .container .content1 {
+      margin-bottom: 0.75rem;
+      margin-top: 10px;
+      display: inline-block;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
 
-      .isiContent1 {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        color: #4b4b4b;
-      }
+    .titleContent1 {
+      font-size: 24px;
+      font-weight: 550;
+      margin-top: -1rem;
+    }
 
-      .isiContent1 p {
-        font-size: 17px;
-        margin-top: -20px;
-        margin-bottom: 5px;
-        color: #4b4b4b;
-      }
+    .isiContent1 {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      color: #4b4b4b;
+    }
 
-      .isiContent1 a {
-        color: rgb(234 88 12);
-        font-size: 0.875rem;
-        margin-top: -20px;
-        margin-bottom: 5px;
-      }
+    .isiContent1 p {
+      font-size: 17px;
+      margin-top: -20px;
+      margin-bottom: 5px;
+      color: #4b4b4b;
+    }
 
-      .content2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: -5px;
-        margin-left: auto;
-        margin-right: auto;
-        border: 1px solid rgb(203 213 225);
-        border-radius: 0.75rem;
-      }
+    .isiContent1 a {
+      color: rgb(234 88 12);
+      font-size: 0.875rem;
+      margin-top: -20px;
+      margin-bottom: 5px;
+    }
 
-      .content2 div {
-        display: flex;
-        margin: auto;
-      }
+    .content2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -5px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid rgb(203 213 225);
+      border-radius: 0.75rem;
+      cursor: pointer;
+    }
 
-      .content2 div a {
-        display: flex;
-        margin-top: -10px;
-        text-decoration: none;
-      }
+    .content2 div {
+      display: flex;
+      margin: auto;
+    }
 
-      .content2 div a img {
-        max-width: 1.5rem;
-        margin-top: auto;
-        margin-bottom: auto;
-      }
+    .content2 div a {
+      display: flex;
+      margin-top: -10px;
+      text-decoration: none;
+    }
 
-      .letter {
-        font-size: 20px;
-        color: black;
-      }
+    .content2 div a img {
+      max-width: 1.5rem;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: 10px;
+    }
 
-      .opsi2 {
-        font-size: 0.875rem;
-        color: rgb(107 114 128);
-        text-align: center;
-      }
+    .letter {
+      font-size: 20px;
+      color: black;
+    }
 
-      form div label {
-        color: rgb(75 85 99);
-        font-weight: 560;
-        font-size: 0.95rem;
-        display: block;
-        margin-bottom: 5px;
-      }
+    .opsi2 {
+      font-size: 0.875rem;
+      color: rgb(107 114 128);
+      text-align: center;
+    }
 
-      .input {
-        width: 95%;
-        height: 20px;
-        padding: 0.5rem;
-        border-radius: 0.25rem;
-        border: 1px solid rgb(203 213 225);
-      }
+    form div label {
+      color: rgb(75 85 99);
+      font-weight: 560;
+      font-size: 0.95rem;
+      display: block;
+      margin-bottom: 5px;
+    }
 
-      .submit {
-        cursor: pointer;
-        margin-top: 20px;
-        width: 100%;
-        height: 40px;
-        padding: 0.5rem;
-        border-radius: 0.25rem;
-        border: 1px solid rgb(203 213 225);
-        background-color: rgb(253 186 116);
-        color: #fff;
-      }
+    .input {
+      width: 95%;
+      height: 20px;
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+      border: 1px solid rgb(203 213 225);
+    }
 
-      .submit:hover {
-        background-color: rgb(234 88 12);
-      }
-      .logo {
-        text-align: center;
-        margin-top: 2rem;
-      }
+    .submit {
+      cursor: pointer;
+      margin-top: 20px;
+      width: 100%;
+      height: 40px;
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+      border: 1px solid rgb(203 213 225);
+      background-color: rgb(253 186 116);
+      color: #fff;
+    }
 
-      .logo img {
-        max-width: 10rem;
-        text-align: center;
-        margin-top: 1rem;
-      }
-    </style>
-  </head>
+    .submit:hover {
+      background-color: rgb(234 88 12);
+    }
 
-  <body>
-    <section>
-      <h1 class="title">Food Unity</h1>
-      <div class="container">
-        <div class="content1">
-          <h2 class="titleContent1">Daftar sekarang</h2>
-          <div class="isiContent1">
-            <p>Sudah punya akun FoodUnity?</p>
-            <a href="masuk.html">Masuk</a>
-          </div>
-        </div>
-        <div class="content2">
-          <div>
-            <a href="#" class="flex">
-              <img src="dist/img/google.png" alt="icon google" />
-              <p class="letter">google</p>
-            </a>
-          </div>
-        </div>
-        <p class="opsi2">Atau masuk dengan</p>
-        <form>
-          <div class="mb-4">
-            <label for="email">Masukkan Nomor HP atau Email</label>
-            <input type="email" id="email" name="email" class="input" />
-          </div>
-          <button type="submit" class="submit">Selanjutnya</button>
-        </form>
-        <div class="logo">
-          <img src="dist/img/food.jpg" alt="logo FoodUnity" />
+    .logo {
+      text-align: center;
+    }
+
+    .logo img {
+      max-width: 10rem;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <h1 class="title">Food Unity</h1>
+    <div class="container">
+      <div class="content1">
+        <h2 class="titleContent1">Daftar sekarang</h2>
+        <div class="isiContent1">
+          <p>Sudah punya akun FoodUnity?</p>
+          <a href="masuk.html">Masuk</a>
         </div>
       </div>
-    </section>
-    <div></div>
-  </body>
+      <div class="content2">
+        <div>
+          <a href="#" class="flex">
+            <img src="dist/img/google.png" alt="icon google" />
+            <p class="letter">google</p>
+          </a>
+        </div>
+      </div>
+      <p class="opsi2">Atau masuk dengan</p>
+      <form onsubmit="validateForm(event)">
+        <div class="mb-4">
+          <label for="email">Masukkan Nomor HP atau Email</label>
+          <input type="email" id="email" name="email" class="input" />
+        </div>
+        <div class="mb-4">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" class="input" />
+        </div>
+        <button type="submit" class="submit">Selanjutnya</button>
+      </form>
+      <div class="logo">
+        <img src="dist/img/food.jpg" alt="logo FoodUnity" />
+      </div>
+    </div>
+  </section>
+
+  <script>
+  function validateForm(event) {
+    event.preventDefault();
+
+    var password = document.getElementById("password").value;
+
+    if (password.length < 6) {
+      alert("Password harus memiliki setidaknya 6 karakter.");
+      return;
+    }
+
+    alert("Formulir valid, dapatkan password dan lakukan tindakan selanjutnya.");
+  }
+</script>
+</body>
+
 </html>
