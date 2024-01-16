@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daftar-FoodUnity</title>
+    <title>Masuk-FoodUnity</title>
     <style>
       body {
         background-color: #f4f4f4;
@@ -68,6 +68,7 @@
         margin-right: auto;
         border: 1px solid rgb(203 213 225);
         border-radius: 0.75rem;
+        cursor: pointer;
       }
 
       .content2 div {
@@ -100,7 +101,7 @@
 
       form div label {
         color: rgb(75 85 99);
-        font-weight: 560;
+        font-weight: 500;
         font-size: 0.95rem;
         display: block;
         margin-bottom: 5px;
@@ -135,7 +136,6 @@
 
       .logo {
         text-align: center;
-        margin-top: 2rem;
       }
 
       .logo img {
@@ -154,15 +154,19 @@
           <h2 class="titleContent1">Masuk</h2>
           <a href="daftar.html" class="daftar">Daftar</a>
         </div>
-        <form action="#">
+        <form id="loginForm">
           <div class="mb-4">
             <label for="email">Masukkan Nomor HP atau Email</label>
             <input type="email" id="email" name="email" class="input" />
           </div>
+          <div class="mb-4">
+            <label for="password">Masukkan Password</label>
+            <input type="password" id="password" name="password" class="input" />
+          </div>
           <div class="content1">
             <a href="mailto:abidinonurkhiansyah@gmail.com" class="daftar">Butuh bantuan?</a>
           </div>
-          <button type="submit" class="submit">Selanjutnya</button>
+          <button type="button" onclick="validateForm()" class="submit">Selanjutnya</button>
         </form>
         <p class="opsi2">Atau masuk dengan</p>
         <div class="content2">
@@ -177,6 +181,19 @@
           <img src="dist/img/food.jpg" alt="logo FoodUnity" />
         </div>
       </div>
+
+      <script>
+        function validateForm() {
+          var email = document.getElementById("email").value;
+          var password = document.getElementById("password").value;
+
+          if (email === "" || password === "") {
+            alert("Mohon isi semua field!");
+          } else {
+            alert("Form berhasil di-submit!");
+          }
+        }
+      </script>
     </section>
   </body>
 </html>
