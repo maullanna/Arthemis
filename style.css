@@ -439,120 +439,126 @@ p {
 /*hubungi kami akhir*/
 /* daftar*/
 /* Reset some default styles */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-  }
-  
-  /* Custom styles */
-  .bg-gray-100 {
-    background-color: #f0f0f0;
-  }
-  
-  .text-orange-600 {
-    color: #ff8c00;
-  }
-  
-  .text-center {
-    text-align: center;
-  }
-  
-  .font-bold {
-    font-weight: bold;
-  }
-  
-  .mb-10 {
-    margin-bottom: 2.5rem;
-  }
-  
-  .mt-20 {
-    margin-top: 5rem;
-  }
-  
-  .bg-white {
-    background-color: #fff;
-  }
-  
-  .p-8 {
-    padding: 2rem;
-  }
-  
-  .rounded-xl {
-    border-radius: 0.75rem;
-  }
-  
-  .shadow-md {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .w-96 {
-    width: 24rem;
-  }
-  
-  .mb-3 {
-    margin-bottom: 0.75rem;
-  }
-  
-  .inline-block {
-    display: inline-block;
-  }
-  
-  .text-2xl {
-    font-size: 1.5rem;
-  }
-  
-  .font-semibold {
-    font-weight: 600;
-  }
-  
-  .flex {
-    display: flex;
-  }
-  
-  .text-sm {
-    font-size: 0.875rem;
-  }
-  
-  .mt-1 {
-    margin-top: 0.25rem;
-  }
-  
-  .mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .border {
-    border: 1px solid #e5e7eb;
-  }
-  
-  .my-auto {
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  
-  .max-w-7 {
-    max-width: 1.75rem;
-  }
-  
-  .text-gray-950 {
-    color: #4a5568;
-  }
-  
-  .ml-5 {
-    margin-left: 1.25rem;
-  }
-  
-  .my-4 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .text-gray-500 {
-   
-  
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+/* Custom styles */
+.bg-gray-100 {
+  background-color: #f0f0f0;
+}
+
+.text-orange-600 {
+  color: #ff8c00;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.flex {
+  display: flex;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.border {
+  border: 1px solid #e5e7eb;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.max-w-7 {
+  max-width: 1.75rem;
+}
+
+.text-gray-950 {
+  color: #4a5568;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.text-gray-500 {
+}
+
 /* daftar*/

@@ -37,7 +37,7 @@
       .container .content1 {
         margin-bottom: 0.75rem;
         margin-top: 10px;
-        display: inline-block;
+        display: flex;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -48,34 +48,22 @@
         font-size: 24px;
         font-weight: 550;
         margin-top: -1rem;
-      }
-
-      .isiContent1 {
-        display: flex;
-        text-align: center;
-        justify-content: center;
         color: #4b4b4b;
+        text-align: left;
       }
 
-      .isiContent1 p {
-        font-size: 17px;
-        margin-top: -20px;
-        margin-bottom: 5px;
-        color: #4b4b4b;
-      }
-
-      .isiContent1 a {
+      .daftar {
         color: rgb(234 88 12);
         font-size: 0.875rem;
-        margin-top: -20px;
+        margin-top: -10px;
         margin-bottom: 5px;
+        margin-left: 17rem;
       }
 
       .content2 {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: -5px;
         margin-left: auto;
         margin-right: auto;
         border: 1px solid rgb(203 213 225);
@@ -116,6 +104,7 @@
         font-size: 0.95rem;
         display: block;
         margin-bottom: 5px;
+        margin-top: -1rem;
       }
 
       .input {
@@ -124,11 +113,13 @@
         padding: 0.5rem;
         border-radius: 0.25rem;
         border: 1px solid rgb(203 213 225);
+        margin-bottom: 1rem;
       }
 
       .submit {
         cursor: pointer;
-        margin-top: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         width: 100%;
         height: 40px;
         padding: 0.5rem;
@@ -141,6 +132,7 @@
       .submit:hover {
         background-color: rgb(234 88 12);
       }
+
       .logo {
         text-align: center;
         margin-top: 2rem;
@@ -159,12 +151,20 @@
       <h1 class="title">Food Unity</h1>
       <div class="container">
         <div class="content1">
-          <h2 class="titleContent1">Daftar sekarang</h2>
-          <div class="isiContent1">
-            <p>Sudah punya akun FoodUnity?</p>
-            <a href="masuk.html">Masuk</a>
-          </div>
+          <h2 class="titleContent1">Masuk</h2>
+          <a href="daftar.html" class="daftar">Daftar</a>
         </div>
+        <form action="#">
+          <div class="mb-4">
+            <label for="email">Masukkan Nomor HP atau Email</label>
+            <input type="email" id="email" name="email" class="input" />
+          </div>
+          <div class="content1">
+            <a href="mailto:abidinonurkhiansyah@gmail.com" class="daftar">Butuh bantuan?</a>
+          </div>
+          <button type="submit" class="submit">Selanjutnya</button>
+        </form>
+        <p class="opsi2">Atau masuk dengan</p>
         <div class="content2">
           <div>
             <a href="#" class="flex">
@@ -173,14 +173,6 @@
             </a>
           </div>
         </div>
-        <p class="opsi2">Atau masuk dengan</p>
-        <form>
-          <div class="mb-4">
-            <label for="email">Masukkan Nomor HP atau Email</label>
-            <input type="email" id="email" name="email" class="input" />
-          </div>
-          <button type="submit" class="submit">Selanjutnya</button>
-        </form>
         <div class="logo">
           <img src="dist/img/food.jpg" alt="logo FoodUnity" />
         </div>
