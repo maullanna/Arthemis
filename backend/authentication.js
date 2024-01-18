@@ -43,9 +43,10 @@ const handleSignUp = () => {
   const passwordSignUp = document.getElementById('psw_signup').value;
 
   createUserWithEmailAndPassword(auth, emailSignUp, passwordSignUp)
-    .then(addUser)
-    .then(() => {
+    .then((userCredential) => {
+      addUser(userCredential);
       alert('User Telah ditambahkan:)');
+      window.location.href = "index.html"; // Redirect to index.html
     })
     .catch(handleErrors);
 };
