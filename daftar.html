@@ -72,30 +72,22 @@
       margin-bottom: 5px;
     }
 
-    .content2 {
+    .flex {
       display: flex;
       align-items: center;
       justify-content: center;
       margin-top: -5px;
+      height: 60px;
+      width: 75%;
       margin-left: auto;
       margin-right: auto;
       border: 1px solid rgb(203 213 225);
       border-radius: 0.75rem;
+      text-decoration: none;
       cursor: pointer;
     }
 
-    .content2 div {
-      display: flex;
-      margin: auto;
-    }
-
-    .content2 div a {
-      display: flex;
-      margin-top: -10px;
-      text-decoration: none;
-    }
-
-    .content2 div a img {
+    .flex img {
       max-width: 1.5rem;
       margin-top: auto;
       margin-bottom: auto;
@@ -168,25 +160,22 @@
           <a href="masuk.html">Masuk</a>
         </div>
       </div>
-      <div class="content2">
-        <div>
-          <a href="#" class="flex">
+        <button type="submit" class="flex" id="loginWithGoogle">
             <img src="dist/img/google.png" alt="icon google" />
             <p class="letter">google</p>
-          </a>
-        </div>
-      </div>
+        </button>
       <p class="opsi2">Atau masuk dengan</p>
-      <form onsubmit="validateForm(event)">
+      <form onsubmit="validateForm(event)" id="loginForm">
         <div class="mb-4">
           <label for="email">Masukkan Nomor HP atau Email</label>
-          <input type="email" id="email" name="email" class="input" />
+          <input type="email" id="email_signup" name="email" class="input" />
         </div>
         <div class="mb-4">
           <label for="password">Password</label>
-          <input type="password" id="password" name="password" class="input" />
+          <input type="password" id="psw_signup" name="password" class="input" />
         </div>
-        <button type="submit" class="submit">Selanjutnya</button>
+        <button type="submit" value="Sign up" onclick="validateForm(event)" id="button_signup"
+          class="submit">Selanjutnya</button>
       </form>
       <div class="logo">
         <img src="dist/img/food.jpg" alt="logo FoodUnity" />
@@ -195,19 +184,22 @@
   </section>
 
   <script>
-  function validateForm(event) {
-    event.preventDefault();
+    function validateForm(event) {
+      event.preventDefault();
 
-    var password = document.getElementById("password").value;
+      var password = document.getElementById("psw_signup").value;
 
-    if (password.length < 6) {
-      alert("Password harus memiliki setidaknya 6 karakter.");
-      return;
+      if (password.length < 6) {
+        alert("Password harus memiliki setidaknya 6 karakter.");
+        return;
+      }
+
+      alert("Formulir valid, dapatkan password dan lakukan tindakan selanjutnya.");
     }
-
-    alert("Formulir valid, dapatkan password dan lakukan tindakan selanjutnya.");
-  }
-</script>
+  </script>
+  <script type="module" src="backend/authentication.js"></script>
+  <script type="module" src="backend/dataBase.js"></script>
+  <script type="module" src="backend/google.js"></script>
 </body>
 
 </html>
