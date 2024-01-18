@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 40px;
+}
+#navbar-links .links li {
+  gap: 100px;
+}
+
+.logo img {
+  width: 300px;
+  height: 100px;
+}
+
+#navbar-links .links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 1.25rem;
+  font-family: open sans;
+}
+
+#navbar-links .links li {
+  margin-right: 20px;
+  list-style-type: none;
+}
+
+.links li {
+  text-decoration: none;
+  color: black;
+  margin: 0 15px;
+}
+
+.links li a:hover {
+  color: #00a9ff;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 7px;
+  width: 250%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.right-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.notification img,
+.account img {
+  width: 30px;
+  height: 30px;
+}
+
+.menu-toggle {
+  display: none;
+}
