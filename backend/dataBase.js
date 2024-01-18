@@ -22,18 +22,29 @@ function submitForm(e) {
     let password = getElementVal('psw_signup');
 
     saveSignupForm(email, password);
+    
 }
 
 const saveSignupForm = (email, password) => {
     let newLoginForm = foodunityDB.push();
 
     newLoginForm.set({
-        email: email_signup,
-        password: psw_signup,
+        email: email,
+        password: password,
+
+    }, (error) => {
+        console.log("Data saved to Firebase");
+        if (!error) {
+            // Arahkan pengguna ke menu utama setelah data tersimpan
+            
+        } else {
+            console.error("Error saving data to Firebase:", error);
+            // Handle error jika diperlukan
+        }
     });
+    
 };
 
 const getElementVal = (id) => {
     return document.getElementById(id).value;
 };
-
