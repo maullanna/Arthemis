@@ -6,70 +6,82 @@
     <title>Document</title>
     <link href="dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <style></style>
   </head>
 
   <body>
-    <!--<div class="top-0 bg-orange w-full h-10 font-semibold text-sm shadow-lg z-20 relative" style="height: 50px">
-      <div class="flex items-center float-right gap-3">
-        <img src="dist/img/indonesia.png" class="w-10" style="margin-top: 10px" />
-        <form href="" action=""><button type="Submit" style="margin-top: 10px" class="bg-white w-20 h-7 mr-2 rounded-2xl hover:bg-hover">Masuk</button> <button class="bg-white w-20 h-7 mr-3 rounded-2xl hover:bg-hover">Daftar</button></form>
+    <nav>
+      <div class="logo">
+        <img src="dist/img/food-removebg-preview.png" alt="adidas" />
       </div>
-    </div>-->
-    <header class="fixed z-20 w-full h-20 shadow-lg" style="height: 80px; backdrop-filter: blur(10px)">
-      <img src="dist/img/food-removebg-preview.png" class="w-auto h-full ml-5 absolute" />
-      <div class="float-right mr-12" style="margin-top: 25px">
-        <ul class="ul flex gap-8">
-          <li><a href="#" class="hover:text-blue-400">Beranda</a></li>
-          <li><a href="#" class="hover:text-blue-400">Tentang Kami</a></li>
-          <li>
-            <select id="programDropdown">
-              <option value="" selected disabled>Program</option>
-              <option value="foodDiscount.html">Food Discount%</option>
-              <option value="foodCharity.html">Food Charity</option>
-              <option value="foodShare.html">Food Share</option>
-            </select>
+
+      <div id="navbar-links">
+        <ul class="links">
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Tentang Kami</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Program</a>
+            <div class="dropdown-content">
+              <a href="foodDiscount.html">Food Discount%</a>
+              <a href="#">Food Charity</a>
+              <a href="#">Food Share</a>
+            </div>
           </li>
-          <li><a href="#" class="hover:text-blue-400">Berita</a></li>
-          <li><a href="#" class="hover:text-blue-400">Hubungi Kami</a></li>
-          <img src="dist/img/lonceng.jpg" class="w-8" />
-          <img src="dist/img/account.jpg" class="w-8" />
+          <li><a href="#">Berita</a></li>
+          <li><a href="#">Hubungi Kami</a></li>
         </ul>
       </div>
-    </header>
+
+      <div id="daftar" class="flex items-center float-right gap-3">
+        <img src="dist/img/indonesia.png" class="w-10 mt-4" />
+        <form action="">
+          <button type="Submit" class="bg-white w-25 h-15 mr-2 rounded-2xl hover:bg-hover text-sm">Masuk</button>
+          <button class="bg-white w-25 h-15 mr-3 rounded-2xl hover:bg-hover text-sm">Daftar</button>
+        </form>
+      </div>
+      <div class="menu-toggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
 
     <!--BATASAN AWAL yusuf-->
+    <div id="gallery" class="gallery">
+      <button id="prevBtn">&lt;</button>
+      <div class="image-container">
+        <div class="slide" data-title="Food Discount%" data-description="Deskripsi slide 1">
+          <img src="dist/img/Food1.jpg" alt="Food Discount%" />
+          <div class="caption">
+            <h1 class="display-1 fw-bold mb-4" style="font-size: 4rem; font-family: Arial, sans-serif; font-weight: bold">Food Discount%</h1>
 
-    <div class="wrapper">
-      <div class="slides">
-        <span id="slide-1"></span>
-        <span id="slide-2"></span>
-        <span id="slide-3"></span>
-        <span id="slide-4"></span>
-        <div class="images">
-          <div class="backdrop backdrop-slide-1"></div>
-          <img src="dist/img/makan_ojol1.jpg" class="w-full" alt="" />
-          <div class="backdrop backdrop-slide-2"></div>
-          <img src="dist/img/wakwaw.jpg" class="w-full" alt="" />
-          <div class="backdrop backdrop-slide-3"></div>
-          <img src="dist/img/makan_ojol1.jpg" class="w-full" alt="" />
-          <div class="backdrop backdrop-slide-4"></div>
-          <img src="dist/img/lonceng.jpg" class="w-full" alt="" />
+            <a href="link_slide_1" class="btn btn-primary btn-lg">Selengkapnya</a>
+          </div>
+        </div>
+        <div class="slide" data-title="Food Charity" data-description="Deskripsi slide 2">
+          <img src="dist/img/food2.jpg" alt="Food Charity" />
+          <div class="caption">
+            <h1 class="display-1 fw-bold mb-4">Food Charity</h1>
+
+            <a href="link_slide_2" class="btn btn-primary btn-lg">Selengkapnya</a>
+          </div>
+        </div>
+        <div class="slide" data-title="Food Share" data-description="Deskripsi slide 3">
+          <img src="dist/img/food3.jpg" alt="Food Share" />
+          <div class="caption">
+            <h1 class="display-1 fw-bold mb-4">Food Share</h1>
+
+            <a href="link_slide_3" class="btn btn-primary btn-lg">Selengkapnya</a>
+          </div>
         </div>
       </div>
+      <button id="nextBtn">&gt;</button>
     </div>
 
-    <!--navigasi -->
-    <div class="navigation">
-      <a href="#slide-1">1</a>
-      <a href="#slide-2">2</a>
-      <a href="#slide-3">3</a>
-      <a href="#slide-4">4</a>
-    </div>
     <!--navigasi akhir -->
 
     <!--Contant awal 1-->
-    <div class="container">
+    <div id="container" class="pt-36 pb-32 bg-slate-800 dark:bg-slate-300">
       <div class="content">
         <img class="image" src="dist/img/Tentang kami.png" alt="Tentang Kami" />
         <div class="title">Tentang Kami</div>
@@ -198,7 +210,6 @@
       </div>
 
       <div class="message-section">
-        <h2>Pesan</h2>
         <form>
           <div>
             <label for="name">Nama:</label>
@@ -230,7 +241,12 @@
           window.location.href = selectedOption;
         }
       });
+      /*awal 1*/
+
+      /*awal 1*/
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kenwheeler.github.io/slick/slick/slick.min.js"></script>
     <script src="food.js"></script>
   </body>
 </html>
