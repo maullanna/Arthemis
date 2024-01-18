@@ -1,199 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Masuk-FoodUnity</title>
-    <style>
-      body {
-        background-color: #f4f4f4;
-        scroll-behavior: smooth;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: Arial, Helvetica, sans-serif;
-      }
 
-      .title {
-        text-align: center;
-        font-size: 3rem;
-        font-weight: 700;
-        margin-bottom: 2rem;
-        margin-top: -10rem;
-        color: rgb(234 88 12);
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masuk-FoodUnity</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      scroll-behavior: smooth;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-      .container {
-        background-color: #fff;
-        padding: 2rem;
-        border-radius: 0.75rem;
-        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-        width: 24rem;
-        height: 25rem;
-        margin-bottom: -8rem;
-      }
+    .title {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      margin-top: -10rem;
+      color: rgb(234 88 12);
+    }
 
-      .container .content1 {
-        margin-bottom: 0.75rem;
-        margin-top: 10px;
-        display: flex;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-      }
+    .container {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      width: 24rem;
+      height: 25rem;
+      margin-bottom: -8rem;
+    }
 
-      .titleContent1 {
-        font-size: 24px;
-        font-weight: 550;
-        margin-top: -1rem;
-        color: #4b4b4b;
-        text-align: left;
-      }
+    .container .content1 {
+      margin-bottom: 0.75rem;
+      margin-top: 10px;
+      display: flex;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
 
-      .daftar {
-        color: rgb(234 88 12);
-        font-size: 0.875rem;
-        margin-top: -10px;
-        margin-bottom: 5px;
-        margin-left: 17rem;
-      }
+    .titleContent1 {
+      font-size: 24px;
+      font-weight: 550;
+      margin-top: -1rem;
+      color: #4b4b4b;
+      text-align: left;
+    }
 
-      .content2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        border: 1px solid rgb(203 213 225);
-        border-radius: 0.75rem;
-        cursor: pointer;
-      }
+    .daftar {
+      color: rgb(234 88 12);
+      font-size: 0.875rem;
+      margin-top: -10px;
+      margin-bottom: 5px;
+      margin-left: 17rem;
+    }
 
-      .content2 div {
-        display: flex;
-        margin: auto;
-      }
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -5px;
+      height: 60px;
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid rgb(203 213 225);
+      border-radius: 0.75rem;
+      text-decoration: none;
+      cursor: pointer;
+    }
 
-      .content2 div a {
-        display: flex;
-        margin-top: -10px;
-        text-decoration: none;
-      }
+    .flex img {
+      max-width: 1.5rem;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: 10px;
+    }
 
-      .content2 div a img {
-        max-width: 1.5rem;
-        margin-top: auto;
-        margin-bottom: auto;
-      }
+    .letter {
+      font-size: 20px;
+      color: black;
+    }
 
-      .letter {
-        font-size: 20px;
-        color: black;
-      }
+    .opsi2 {
+      font-size: 0.875rem;
+      color: rgb(107 114 128);
+      text-align: center;
+    }
 
-      .opsi2 {
-        font-size: 0.875rem;
-        color: rgb(107 114 128);
-        text-align: center;
-      }
+    form div label {
+      color: rgb(75 85 99);
+      font-weight: 500;
+      font-size: 0.95rem;
+      display: block;
+      margin-bottom: 5px;
+      margin-top: -1rem;
+    }
 
-      form div label {
-        color: rgb(75 85 99);
-        font-weight: 500;
-        font-size: 0.95rem;
-        display: block;
-        margin-bottom: 5px;
-        margin-top: -1rem;
-      }
+    .input {
+      width: 95%;
+      height: 20px;
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+      border: 1px solid rgb(203 213 225);
+      margin-bottom: 1rem;
+    }
 
-      .input {
-        width: 95%;
-        height: 20px;
-        padding: 0.5rem;
-        border-radius: 0.25rem;
-        border: 1px solid rgb(203 213 225);
-        margin-bottom: 1rem;
-      }
+    .submit {
+      cursor: pointer;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+      height: 40px;
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+      border: 1px solid rgb(203 213 225);
+      background-color: rgb(253 186 116);
+      color: #fff;
+    }
 
-      .submit {
-        cursor: pointer;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: 100%;
-        height: 40px;
-        padding: 0.5rem;
-        border-radius: 0.25rem;
-        border: 1px solid rgb(203 213 225);
-        background-color: rgb(253 186 116);
-        color: #fff;
-      }
+    .submit:hover {
+      background-color: rgb(234 88 12);
+    }
 
-      .submit:hover {
-        background-color: rgb(234 88 12);
-      }
+    .logo {
+      text-align: center;
+    }
 
-      .logo {
-        text-align: center;
-      }
+    .logo img {
+      max-width: 10rem;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
 
-      .logo img {
-        max-width: 10rem;
-        text-align: center;
-        margin-top: 1rem;
-      }
-    </style>
-  </head>
-
-  <body>
-    <section>
-      <h1 class="title">Food Unity</h1>
-      <div class="container">
-        <div class="content1">
-          <h2 class="titleContent1">Masuk</h2>
-          <a href="daftar.html" class="daftar">Daftar</a>
-        </div>
-        <form id="loginForm">
-          <div class="mb-4">
-            <label for="email">Masukkan Nomor HP atau Email</label>
-            <input type="email" id="email" name="email" class="input" />
-          </div>
-          <div class="mb-4">
-            <label for="password">Masukkan Password</label>
-            <input type="password" id="password" name="password" class="input" />
-          </div>
-          <div class="content1">
-            <a href="mailto:abidinonurkhiansyah@gmail.com" class="daftar">Butuh bantuan?</a>
-          </div>
-          <button type="button" onclick="validateForm()" class="submit">Selanjutnya</button>
-        </form>
-        <p class="opsi2">Atau masuk dengan</p>
-        <div class="content2">
-          <div>
-            <a href="#" class="flex">
-              <img src="dist/img/google.png" alt="icon google" />
-              <p class="letter">google</p>
-            </a>
-          </div>
-        </div>
-        <div class="logo">
-          <img src="dist/img/food.jpg" alt="logo FoodUnity" />
-        </div>
+<body>
+  <section>
+    <h1 class="title">Food Unity</h1>
+    <div class="container">
+      <div class="content1">
+        <h2 class="titleContent1">Masuk</h2>
+        <a href="daftar.html" class="daftar">Daftar</a>
       </div>
+      <form id="loginForm" onsubmit="validateForm(event)">
+        <div class="mb-4">
+          <label for="email">Masukkan Nomor HP atau Email</label>
+          <input type="email" id="email_signin" name="email" class="input" placeholder="Email" />
+        </div>
+        <div class="mb-4">
+          <label for="password">Masukkan Password</label>
+          <input type="password" id="psw_signin" name="password" class="input" placeholder="Password" />
+        </div>
+        <div class="content1">
+          <a href="mailto:abidinonurkhiansyah@gmail.com" class="daftar">Butuh bantuan?</a>
+        </div>
+        <button type="button" onclick="validateForm(event)" value="Sign in" id="button_signin"
+          class="submit">Selanjutnya</button>
+      </form>
+      <p class="opsi2">Atau masuk dengan</p>
+      <button type="submit" class="flex" id="loginWithGoogle">
+        <img src="dist/img/google.png" alt="icon google" />
+        <p class="letter">google</p>
+      </button>
+      <div class="logo">
+        <img src="dist/img/food.jpg" alt="logo FoodUnity" />
+      </div>
+    </div>
 
-      <script>
-        function validateForm() {
-          var email = document.getElementById("email").value;
-          var password = document.getElementById("password").value;
+    <script>
+      function validateForm(event) {
+        event.preventDefault();
 
-          if (email === "" || password === "") {
-            alert("Mohon isi semua field!");
-          } else {
-            alert("Form berhasil di-submit!");
-          }
+        var password = document.getElementById("psw_signin").value;
+
+        if (password.length < 6) {
+          alert("Password harus memiliki setidaknya 6 karakter.");
+          return;
         }
-      </script>
-    </section>
-  </body>
+
+        alert("Formulir valid, dapatkan password dan lakukan tindakan selanjutnya.");
+      }
+    </script>
+    <script type="module" src="backend/authentication.js"></script>
+    <script type="module" src="backend/dataBase.js"></script>
+    <script type="module" src="backend/google.js"></script>
+
+  </section>
+</body>
+
 </html>
