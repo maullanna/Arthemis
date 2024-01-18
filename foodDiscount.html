@@ -9,70 +9,7 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
     <link rel="stylesheet" href="gaya.css">
   <style>
-   #navbar-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f8f9fa;
-  padding: 50px;
-}
-
-#navbar-links .logo img {
-  width: 300px;
-  height: 100px;
-}
-
-#navbar-links .links {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  font-size: 1.25rem;
-  font-family: lato;
-}
-
-#navbar-links .links li {
-  margin-right: 20px;
-}
-
-#navbar-links .links li a {
-  text-decoration: none;
-  color: black;
-}
-
-#navbar-links .links li a:hover {
-  color: #00a9ff;
-}
-
-#navbar-links .dropdown {
-  position: relative;
-}
-
-#navbar-links .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border-radius: 7px;
-  width: 250%;
-}
-
-#navbar-links .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-#navbar-links .dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-#navbar-links .dropdown:hover .dropdown-content {
-  display: block;
-}
-
+   
     /*uji coba*/
     .kepala {
       width: 100%;
@@ -140,7 +77,70 @@
       width: 50px;
     }
 
-   
+    #navbar-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 50px;
+}
+
+#navbar-links .logo img {
+  width: 300px;
+  height: 100px;
+}
+
+#navbar-links .links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 1.25rem;
+  font-family: lato;
+}
+
+#navbar-links .links li {
+  margin-right: 20px;
+}
+
+#navbar-links .links li a {
+  text-decoration: none;
+  color: black;
+}
+
+#navbar-links .links li a:hover {
+  color: #00a9ff;
+}
+
+#navbar-links .dropdown {
+  position: relative;
+}
+
+#navbar-links .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 7px;
+  width: 250%;
+}
+
+#navbar-links .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#navbar-links .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+#navbar-links .dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
     .card {
       border: none;
@@ -350,7 +350,7 @@
   <!-- akhir tombol Gratis-->
 
   <!-- awal button unggah -->
-  <a href="unggah.html"><button class="unggah">
+  <a href="unggah.html" target="_blank"><button class="unggah">
       <img src="dist/img/upload.png" alt="">
       <span>Unggah</span>
     </button></a>
